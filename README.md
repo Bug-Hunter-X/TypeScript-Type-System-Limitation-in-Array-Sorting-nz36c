@@ -1,0 +1,3 @@
+# TypeScript Type System Limitation in Array Sorting
+
+This example demonstrates a common pitfall in TypeScript when dealing with array sorting: the type system's inability to guarantee type safety during comparisons if the array contains heterogeneous types.  The `sort` method expects a comparison function that handles any possible pair of elements in the array.  If the array has mixed types (numbers and strings, for example), comparing them using `<`, `>`, etc. can lead to runtime errors.
